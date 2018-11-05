@@ -54,18 +54,18 @@ public class ConnectionTest {
             switch (type) {
                 case 1:
                     url = "jdbc:oracle:" + "thin:@(DESCRIPTION =" + "    (FAILOVER=ON)" + "    (ADDRESS_LIST =" + "      (LOAD_BALANCE=on)" + "      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.201.152)(PORT = 1521))" + "      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.201.153)(PORT = 1521))" + "      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.201.153)(PORT = 1521))" + "    )" + "    (CONNECT_DATA =" + "      (SERVICE_NAME = DAAS)" + "    )" + "  )";
-                    user = "team_sxj";// 用户名,系统默认的账户名
-                    password = "sxj123";// 你安装时选设置的密码
+                    user = "username";// 用户名,系统默认的账户名
+                    password = "password";// 你安装时选设置的密码
                     break;
                 case 2:
                     url = "jdbc:oracle:" + "thin:@192.168.202.11:1521:ORCL";// 测试
-                    user = "team_sxj";// 用户名,系统默认的账户名
-                    password = "sxj123";// 你安装时选设置的密码
+                    user = "username";// 用户名,系统默认的账户名
+                    password = "password";// 你安装时选设置的密码
                     break;
                 case 3:
                     url = "jdbc:oracle:" + "thin:@192.168.201.211:1521:ORCL";// etl
-                    user = "etl";
-                    password = "oracle";
+                    user = "username";
+                    password = "password";
                     break;
             }
             //设置日期格式，写入日期
